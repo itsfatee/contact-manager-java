@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esmt.contactapp.controler.AdminCtl">
+   <children>
+      <SplitPane dividerPositions="0.20535714285714285" layoutX="105.0" layoutY="7.0" orientation="VERTICAL" prefHeight="450.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #87ceeb; -fx-opacity: 80%;">
+               <children>
+                  <Text fill="WHITE" layoutX="177.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A U T H E N T I F I C A T I O N" wrappingWidth="268.3515625">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="312.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="93.0" layoutY="63.0" prefHeight="16.0" prefWidth="64.0" style="-fx-border-color: grey; -fx-border-radius: 15px;" text="  L O G I N" textFill="#141414">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <Label layoutX="84.0" layoutY="117.0" prefHeight="19.0" prefWidth="98.0" style="-fx-border-color: grey; -fx-border-radius: 12px;" text=" P A S S W O R D">
+                     <effect>
+                        <DropShadow />
+                     </effect></Label>
+                  <TextField fx:id="champLogin" layoutX="197.0" layoutY="59.0" prefHeight="25.0" prefWidth="205.0" />
+                  <Button fx:id="ConnexionBtn" layoutX="237.0" layoutY="183.0" mnemonicParsing="false" onAction="#seConnecter" style="-fx-background-color: #48d1cc; -fx-text-fill: White; -fx-background-radius: 15px; -fx-border-color: grey; -fx-border-radius: 12px;" text="C O N N E X I O N" />
+                  <PasswordField fx:id="champPwd" layoutX="197.0" layoutY="113.0" prefHeight="25.0" prefWidth="205.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

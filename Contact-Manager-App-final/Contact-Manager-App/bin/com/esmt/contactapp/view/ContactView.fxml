@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esmt.contactapp.controler.ContactCtl">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="7.0" layoutY="7.0" prefHeight="530.0" prefWidth="750.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-border-color: gold; -fx-background-color: #f5f5d5;">
+               <children>
+                  <Text layoutX="51.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" AJOUT CONTACT" underline="true" wrappingWidth="138.111328125">
+                     <effect>
+                        <DropShadow />
+                     </effect></Text>
+                  <Separator layoutY="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="16.0" layoutY="91.0" text="NOM :" />
+                  <TextField fx:id="champNom" layoutX="14.0" layoutY="120.0" />
+                  <Label layoutX="16.0" layoutY="160.0" text="PRENOM :" />
+                  <TextField fx:id="champPrenom" layoutX="14.0" layoutY="193.0" />
+                  <Label layoutX="16.0" layoutY="230.0" text="TELEPHONE :" />
+                  <TextField fx:id="champPhone" layoutX="14.0" layoutY="262.0" />
+                  <Label layoutX="23.0" layoutY="298.0" text="EMAIL :" />
+                  <TextField fx:id="champMail" layoutX="14.0" layoutY="328.0" />
+                  <Button fx:id="addBtn" layoutX="20.0" layoutY="378.0" mnemonicParsing="false" onAction="#ajouterContact" style="-fx-background-color: #00bfff; -fx-background-radius: 15px;" text="Ajouter..." textFill="WHITE" />
+                  <Button fx:id="resetBtn" layoutX="87.0" layoutY="378.0" mnemonicParsing="false" onAction="#annulerSaisie" style="-fx-background-color: red; -fx-background-radius: 15px; -fx-opacity: 80%;" text="Annuler..." textFill="WHITE" />
+                  <TextField fx:id="champId" layoutX="13.0" layoutY="52.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-border-color: gold; -fx-background-color: #f5f5d5;">
+               <children>
+                  <Separator layoutY="38.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Separator layoutY="80.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Text layoutX="129.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" C O N T A C T    M A N A G E R     A P P" underline="true" wrappingWidth="264.685546875" />
+                  <TextField fx:id="searchBar" layoutX="82.0" layoutY="49.0" prefHeight="25.0" prefWidth="291.0" />
+                  <Separator layoutX="2.0" layoutY="476.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Button fx:id="deleteBtn" layoutX="180.0" layoutY="502.0" mnemonicParsing="false" onAction="#supprimerContact" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: red; -fx-opacity: 80%; -fx-text-fill: white; -fx-background-radius: 15px;" text="Supprimer..." />
+                  <Button fx:id="updateBtn" layoutX="293.0" layoutY="502.0" mnemonicParsing="false" onAction="#modifierContact" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: orange; -fx-background-radius: 15px;" text="Modifier..." textFill="WHITE" />
+                  <TableView fx:id="tableView" layoutX="1.0" layoutY="80.0" prefHeight="391.0" prefWidth="522.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0">
+                    <columns>
+                      <TableColumn fx:id="idContact" prefWidth="70.0" text="ID" />
+                      <TableColumn fx:id="nomContact" prefWidth="132.0" text="Nom" />
+                        <TableColumn fx:id="prenomContact" prefWidth="75.0" text="Prénom" />
+                        <TableColumn fx:id="mailContact" prefWidth="136.0" text="Email" />
+                        <TableColumn fx:id="phoneContact" prefWidth="72.0" text="Téléphone" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="exitBtn" layoutX="394.0" layoutY="502.0" mnemonicParsing="false" onAction="#quitterAppli" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #00bfff; -fx-background-radius: 15px;" text="Quitter..." textFill="WHITE" />
+                  <Button fx:id="searchBtn" layoutX="382.0" layoutY="49.0" mnemonicParsing="false" onAction="#chercherContact" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #00bfff; -fx-background-radius: 15px;" text="RECHERCHER" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="187.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esmt.contactapp.controler.ChoixCtrl">
+   <top>
+      <AnchorPane prefHeight="223.0" prefWidth="703.0" style="-fx-background-color: #ffffe0; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="72.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="             Tapez 1 pour le mode console" textAlignment="JUSTIFY" wrappingWidth="367.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="choix" layoutX="137.0" layoutY="144.0" style="-fx-border-radius: 15px;" />
+            <Separator layoutY="57.0" prefHeight="5.0" prefWidth="447.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Text layoutX="89.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisissez votre mode de travail" wrappingWidth="350.14453125">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="72.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="             Tapez 2 pour le mode graphique">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="ok" layoutX="296.0" layoutY="142.0" mnemonicParsing="false" onAction="#entreer" style="-fx-background-color: #00bfff; -fx-background-radius: 15px; -fx-border-color: grey; -fx-border-radius: 15px;" text="Entrez" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

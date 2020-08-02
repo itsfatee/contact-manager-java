@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#addBtn {
+	-fx-background-color: green;
+}
+#resetBtn {
+	-fx-background-color: red;
+}
+#deleteBtn {
+	-fx-background-color: red;
+}
+#updateBtn {
+	-fx-background-color: orange;
+}
+#exitBtn {
+	-fx-background-color: aqua;
+}
+#searchBtn {
+	-fx-background-color: aqua;
+}
